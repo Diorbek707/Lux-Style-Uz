@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Оформление заказа — LuxStyle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="order-page">
+        <div class="order-card">
+
+            <h1>Оформление заказа</h1>
+            <p class="order-sub">Мы свяжемся с вами в WhatsApp</p>
+
+            <form onsubmit="sendWhatsApp(event)">
+                <input type="text" id="name" placeholder="Ваше имя" required>
+                <input type="tel" id="phone" placeholder="Номер" required>
+                <input type="text" id="address" placeholder="Адрес доставки" required>
+
+                <select id="payment">
+                    <option>Оплата наличными</option>
+                    <option>Оплата картой</option>
+                </select>
+
+                <textarea id="comment" placeholder="Комментарий к заказу"></textarea>
+
+                <button type="submit" class="order-btn">
+                    Оформить заказ
+                </button>
+            </form>
+
+            <span class="secure">🔒 Безопасно • Быстро • VIP сервис</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
